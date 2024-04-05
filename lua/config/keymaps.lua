@@ -11,3 +11,7 @@ end, { desc = "Lazygit" })
 map("n", "<leader>gG", function()
   LazyVim.lazygit()
 end, { desc = "Lazygit (cwd)" })
+map("n", "<F7>", "<cmd>ToggleTerm<CR>")
+map("n", "r", "<C-r>")
+
+map("t", "<F7>", "<cmd>ToggleTerm<CR>")
