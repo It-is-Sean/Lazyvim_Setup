@@ -12,7 +12,7 @@ map("n", "<leader>gG", function()
   LazyVim.lazygit()
 end, { desc = "Lazygit (cwd)" })
 
---CODERUNNER
+--CODE RUNNER
 map("n", "r", "<C-r>")
 map("n", "<F6>", "<cmd>CompilerOpen<cr>", { noremap = true, silent = true, desc = "Run Code" })
 map("n", "<leader>r", "<cmd>CompilerOpen<cr>", { noremap = true, silent = true, desc = "Run Code" })
@@ -33,3 +33,20 @@ end, { desc = "Stop" })
 
 --TERMINAL
 map({ "t", "i", "n" }, "<F7>", "<cmd>ToggleTerm<CR>")
+
+--DELETE & CUT
+map({ "n", "v" }, "d", '"_d')
+map({ "n", "v" }, "dd", '"_dd')
+map({ "n", "v" }, "dw", '"_dw')
+map({ "n", "v" }, "D", '"_D')
+map({ "n", "v" }, "x", "d")
+map({ "n", "v" }, "xx", "dd")
+map({ "n", "v" }, "xw", "dw")
+map({ "n", "v" }, "X", "D")
+
+--INSERT MOVE
+map("i", "<C-h>", "<LEFT>")
+map("i", "<C-l>", "<RIGHT>")
+map("i", "<C-j>", "<DOWN>")
+map("i", "<C-k>", "<UP>")
+map("i", "<C-d>", "<DELETE>")
