@@ -21,6 +21,9 @@ return {
             },
           },
         },
+        ruff_lsp = {
+          enabled = false,
+        },
       },
     },
   },
