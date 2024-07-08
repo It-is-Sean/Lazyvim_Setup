@@ -14,8 +14,8 @@ end, { desc = "Lazygit (cwd)" })
 
 map("n", "r", "<C-r>")
 --CODE RUNNER
-map("n", "<F6>", "<cmd>CompilerOpen<cr>", { noremap = true, silent = true, desc = "Run Code" })
-map("n", "<leader>r", "<cmd>CompilerOpen<cr>", { noremap = true, silent = true, desc = "Run Code" })
+--map("n", "<F6>", "<cmd>CompilerOpen<cr>", { noremap = true, silent = true, desc = "Run Code" })
+--map("n", "<leader>r", "<cmd>CompilerOpen<cr>", { noremap = true, silent = true, desc = "Run Code" })
 
 --DAP
 map({ "n", "i" }, "<F5>", function()

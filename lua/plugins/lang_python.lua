@@ -4,7 +4,7 @@ return {
     opts = {
       servers = {
         ruff = {
-          enabled = false,
+          enabled = true,
           keys = {
             {
               "<leader>co",
@@ -21,7 +21,15 @@ return {
             },
           },
         },
+        pyright = {
+          handlers = {
+            ["textDocument/publishDiagnostics"] = function() end,
+          },
+        },
         ruff_lsp = {
+          enabled = false,
+        },
+        black = {
           enabled = false,
         },
       },
