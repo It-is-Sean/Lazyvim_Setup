@@ -12,7 +12,8 @@ map("n", "<leader>gG", function()
   LazyVim.lazygit()
 end, { desc = "Lazygit (cwd)" })
 
-map("n", "r", "<C-r>")
+--map("n", "r", "<C-r>")
+--map("n", "<C-r>", "r")
 --CODE RUNNER
 --map("n", "<F6>", "<cmd>CompilerOpen<cr>", { noremap = true, silent = true, desc = "Run Code" })
 --map("n", "<leader>r", "<cmd>CompilerOpen<cr>", { noremap = true, silent = true, desc = "Run Code" })

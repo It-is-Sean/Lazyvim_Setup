@@ -36,7 +36,7 @@ return {
       })
     end,
     keys = {
-      { "<leader>r", "<cmd>:RunCode<CR>", desc = "Run Code", mode = { "n" } },
+      { "<leader>r", "<cmd>:RunCode<CR><cmd>startinsert<CR>", desc = "Run Code", mode = { "n" } },
     },
   },
 }
