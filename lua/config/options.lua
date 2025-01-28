@@ -4,7 +4,3 @@
 -- Set to "basedpyright" to use basedpyright instead of pyright.
 vim.g.lazyvim_python_lsp = "pyright"
 vim.opt.relativenumber = false
----@diagnostic disable-next-line: undefined-field
-if vim.loop.os_uname().sysname == "Windows_NT" then
-  require("./cfg_windows.lua")
-end
