@@ -1,0 +1,8 @@
+return {
+  "iamcco/markdown-preview.nvim",
+  config = function()
+    -- 设置 markdown-preview.nvim 使用 explorer.exe 打开预览
+    vim.g.mkdp_browser = "/mnt/c/Windows/explorer.exe"
+  end,
+  ft = { "markdown" }, -- 确保只在 Markdown 文件中加载
+}
